@@ -1,6 +1,6 @@
 # QOSF Mentorship Screening Task 2
 
-My answer can be found in learn-bell.ipynb. Below is a short write-up which is also included in that jupyter notebook.
+My answer can be found in learn-bell.ipynb. Below is a short write-up which is also included in that jupyter notebook where the equations are properly rendered.
 
 ### Author
 Tony Tong 
