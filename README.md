@@ -5,7 +5,7 @@ My answer can be found in `learn-bell.ipynb` and `learn-bell.pdf`. Below is a sh
 ### Author
 Tony Tong 
 
-### Question
+## Question
 Task 2
 Implement a circuit that returns |01> and |10> with equal probability.
 Requirements :
@@ -106,6 +106,9 @@ Both Rotosovle and Rotoselect has decent accuracy (MSE < 0.012) with 1000 measur
 qGAN also has decent accuracy (MSE=0.078). Both generator's and discriminator's losses are stable after ~100 iterations. Comparing to Rotosolve and Rotoselect, qGAN generates larger probabilities for $\big|00\rangle, \big|01\rangle$, probably becasue the training dataset, the bi-modal distribution built with two normal distribution has non-zero value in those region. If the standard deviation for the two normal distributions are made smaller, the qGAN might be able to produce better result.
 
 The qGAN's performance might improve with a larger dataset and longer training time, but the training takes a long time. If time permits, more optimization and hyperparameter search should be tried. Also, it might be interesting to take advantage of GPU for the training.
+
+#### Bonus
+Due to time limit, the Bonus question, namely, how to produce that particular bell state without any local phase. If it has to be done with a variational circuit and parametric gates, then the loss function should be tweaked to discourage a local phase. On the other hand, if hand-craft gate is permitted, maybe some gates such as a phase kickback could be useful.
 
 ### References
 [1] M. Ostaszewski, E. Grant, and M. Benedetti, Quantum Circuit Structure Learning, ArXiv:1905.09692 [Quant-Ph] (2019).
